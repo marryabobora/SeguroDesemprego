@@ -1,0 +1,329 @@
+@import '_variaveis.scss';
+
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    font-family: $defaultfont;
+}
+
+
+@media (max-width: 800px){
+    h3 {
+        font-size: $fontsizeh2;
+    }
+
+
+    .divprincipal {
+        background-color: $secondarycolor;
+        width: 95%;
+        height: 450px;
+        margin-left: 3vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 3vw;
+
+            .radio {
+                display: flex;
+                flex-direction: row;
+            }
+        
+            h3, span, div {
+                padding: 5px;
+            }
+
+            h3 {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: $fontsizetext;
+                color: $fontcolortext;
+            }
+
+            p{
+                padding-bottom: 9px;
+            }
+
+            input {
+                font-size: 20px;
+            }
+
+            .titulo, .quantasvezes, .antepenultimo, .penultimo, .ultimo, .quantosmeses {
+                padding-bottom: 5px;
+            }
+
+            .antepenultimo, .penultimo, .ultimo, .quantosmeses{
+                input{
+                border: 1px solid $primarycolor;
+                width: 90%;}
+            }
+
+            .quantasvezes {
+                margin-bottom: 10px;
+                input {
+                    margin-left: 15px;
+                }
+            }
+            #botao {
+                background-color: #8224E3;
+                width: 50vw;
+                height: 40px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                margin-left: 20vw;
+                margin-bottom: 20px;
+                border-style: none;
+                border: none;
+                text-decoration: none;
+                cursor: pointer;
+        }
+          
+
+   
+
+        
+    }
+
+}
+
+.divtriangulo {
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid $secondarycolor;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+   
+}
+
+.divresultado {
+    background-color: $primarycolor;
+    color: $white;
+    width: 95%;
+    height: 200px;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: $fontsizetext;
+            color: $secondarycolor;
+        }
+        .resultado{
+            font-size: $fontsizeh2;
+        }
+
+        h3, p, span {
+            margin-left: 5vw;
+        }
+
+        .divparcelasflex {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .parcelasflex1 {
+            display: flex;
+            flex-direction: column;
+        }
+        .parcelasflex2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+}
+
+
+}
+
+@media (min-width: 801px){
+    h3 {
+        font-size: $fontsizeh2;
+    }
+
+
+    .divprincipal {
+        background-color: $secondarycolor;
+        width: 95%;
+        height: 450px;
+        margin-left: 3vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 3vw;
+
+            .radio {
+                display: flex;
+                flex-direction: row;
+            }
+        
+        
+            h3, span, div {
+                padding: 5px;
+            }
+
+            h3 {
+                margin-bottom: 25px;
+                margin-top: 25px;
+            }
+
+             p {
+                font-size: $fontsizetext;
+                color: $fontcolortext;
+            }
+
+            p{
+                padding-bottom: 9px;
+            }
+
+            input {
+                font-size: 20px;
+            }
+
+            .titulo, .quantasvezes, .antepenultimo, .penultimo, .ultimo, .quantosmeses {
+                padding-bottom: 5px;
+            }
+
+            .antepenultimo, .penultimo, .ultimo, .quantosmeses{
+                input{
+                border: 1px solid $primarycolor;
+                width: 90%;}
+            }
+
+            .quantasvezes {
+                margin-bottom: 10px;
+                input {
+                    margin-left: 15px;
+                }
+            }
+
+            .divbotao {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-left: -3vw;
+            }
+
+            #botao {
+                background-color: #8224E3;
+                width: 20vw;
+                height: 40px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+             
+                margin-bottom: 20px;
+                border-style: none;
+                border: none;
+                text-decoration: none;
+                cursor: pointer;
+            
+                #botao:hover{
+                    background: #2079b0;
+                }
+            
+        }
+        
+
+    }
+
+}
+
+.divtriangulo {
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid $secondarycolor;
+    margin-left: 49vw;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+ 
+   
+ 
+    
+   
+}
+
+.divresultado {
+    background-color: $primarycolor;
+    color: $white;
+    width: 95%;
+    height: 200px;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: $fontsizetext;
+            color: $secondarycolor;
+        }
+        .resultado{
+            font-size: $fontsizeh2;
+        }
+
+        h3, p, span {
+            margin-left: 5vw;
+        }
+
+        .divparcelasflex {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .parcelasflex1 {
+            display: flex;
+            flex-direction: column;
+        }
+        .parcelasflex2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+}
+
+
+}
