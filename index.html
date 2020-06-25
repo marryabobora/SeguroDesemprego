@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de seguro desemprego</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
+<body>
+
+    <div class="divprincipal">
+
+        <form>
+
+            <h3 class="titulo">Calcule seu seguro desemprego</h3>
+
+            <div class="quantasvezes"><p>Quantas vezes você recebeu seguro desemprego?</p>
+        <div class="radio">
+            <input type="radio" value="0" name="number" id="r0" checked><p>Nenhuma vez</p> 
+            <input type="radio" value="1" name="number" id="r1"><p>Uma vez</p> 
+            <input type="radio" value="2" name="number" id="r2"><p>Duas vezes ou mais</p></div>
+        </div>
+                
+            <div class="antepenultimo"><p>Qual seu antepenúltimo salário?</p><input type="number" value="" id="idantepenultimo" required></div>
+        
+            <div class="penultimo"><p>Qual seu penúltimo salário?</p><input type="number" value=" " id="idpenultimo" required></div>
+        
+            <div class="ultimo"><p>Qual seu último salário?</p><input type="number" value=" " id="idultimo" required></div>
+            
+            <div class="quantosmeses"><p>Quantos meses você trabalhou nessa empresa?</p><input type="number" value=" " id="idquantosmeses" required></div>
+        
+           <div class="divbotao">
+            <button onclick="calcular();" id="botao" type="submit">
+                <span class="textbotao">Calcular</span>
+            </button>
+            </div>
+        
+    
+        </form>
+
+
+
+    </div>
+
+    <div class="divtriangulo"></div>
+
+
+    <div class="divresultado">
+
+        <h3>Seu resultado:</h3>
+        
+        <div class="divparcelasflex">
+            <div class="parcelasflex1"><p >Quantidade de parcelas:</p>
+            <span class="resultado" id="resultadoparcelas"> </span></div>
+            
+            <div id="textoparcelas" class="parcelasflex2"><p >Valor das parcelas:</p>
+            <span class="resultado" id="resultadovalor"></span></div>
+        </div>
+
+        <p>*Os valores podem variar dependendo do cálculo realizado pelo Ministério do Trabalho.</p>
+
+        
+    </div>
+
+<script src="JS/calculadora_desemprego.js"> </script>
+
+
+<script  src="JS/jquery-3.5.1.min.js"></script>
+<script  src="JS/jquery.mask.min.js"></script>
+<script src="JS/calculadora_desemprego.js"> </script>
+</body>
+</html>
