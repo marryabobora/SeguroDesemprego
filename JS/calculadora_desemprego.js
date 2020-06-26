@@ -54,6 +54,8 @@ Quantidade de tempo
 
 
 
+
+
 function calcularPromedio(ultimoSalario, penultimoSalario, antepenultimoSalario) {
 
   var somaDeSalarios = (parseFloat(ultimoSalario) + parseFloat(antepenultimoSalario) + parseFloat(penultimoSalario));
@@ -92,6 +94,10 @@ function compararPromedio (promedioDeSalario){
     var valorAlto = 1813.03;
     console.log(valorAlto);
     document.getElementById("resultadovalor").innerHTML = "R$" + valorAlto.toFixed(2);   /* valor */ 
+  }
+
+  if (promedioDeSalario >= 0) {
+      document.getElementById("resultadovalor").innerHTML = "";
   }
  
 }
@@ -176,6 +182,36 @@ function segundaSolicitacao(mesesDeTrabalho){
      return resultado;
  }
 
+ function funcaoB (){
+    document.getElementById("resultadovalor").style.visibility = "visible";
+    document.getElementById("quantidadep").style.visibility = "visible";
+       document.getElementById("valorp").style.visibility = "visible";
+
+    if (document.getElementById("idantepenultimo").value <= 500 ){
+       document.getElementById("resultadovalor").style.visibility = "hidden";
+       document.getElementById("quantidadep").style.visibility = "hidden";
+       document.getElementById("valorp").style.visibility = "hidden";
+       document.getElementById("resultadoparcelas").innerHTML = "Infelizmente, você não tem direito ao seguro desemprego.";
+
+    }
+    if (document.getElementById("idpenultimo").value <= 500 ){
+       document.getElementById("resultadovalor").style.visibility = "hidden";
+       document.getElementById("quantidadep").style.visibility = "hidden";
+       document.getElementById("valorp").style.visibility = "hidden";
+       document.getElementById("resultadoparcelas").innerHTML = "Infelizmente, você não tem direito ao seguro desemprego.";
+    }
+    if (document.getElementById("idultimo").value <= 500 ){
+       document.getElementById("resultadovalor").style.visibility = "hidden";
+       document.getElementById("quantidadep").style.visibility = "hidden";
+       document.getElementById("valorp").style.visibility = "hidden";
+       document.getElementById("resultadoparcelas").innerHTML = "Infelizmente, você não tem direito ao seguro desemprego.";
+    }
+
+    console.log("manzana");
+}
+
+
+
 function calcular () {
 
     
@@ -211,15 +247,12 @@ function calcular () {
 
     console.log(resultado)
 
-    
-    
-
-
+    funcaoB(); 
 
     }
 
 
 
-
+  
 
 
